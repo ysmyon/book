@@ -6,10 +6,10 @@ function Main() {
   useEffect(() => {
     let a = setTimeout(() => {
       setDown('down-end');
-    }, 100)
+    }, 500)
     let b = setTimeout(() => {
       setLeft('left-end');
-    }, 400)
+    }, 1000)
 
     return () => {
       clearTimeout(a, b);
