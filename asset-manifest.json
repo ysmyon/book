@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/frea/static/css/main.c6800dde.css",
-    "main.js": "/frea/static/js/main.192bef88.js",
+    "main.js": "/frea/static/js/main.e6b4f549.js",
     "static/js/787.adc6efa7.chunk.js": "/frea/static/js/787.adc6efa7.chunk.js",
     "static/media/logo.svg": "/frea/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/frea/index.html",
     "main.c6800dde.css.map": "/frea/static/css/main.c6800dde.css.map",
-    "main.192bef88.js.map": "/frea/static/js/main.192bef88.js.map",
+    "main.e6b4f549.js.map": "/frea/static/js/main.e6b4f549.js.map",
     "787.adc6efa7.chunk.js.map": "/frea/static/js/787.adc6efa7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6800dde.css",
-    "static/js/main.192bef88.js"
+    "static/js/main.e6b4f549.js"
   ]
 }
