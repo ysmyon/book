@@ -1,38 +1,21 @@
-.App {
-  text-align: center;
+body {background-color: fff;}
+
+.txt-org {color: orangered;}
+/* .fade {opacity: 0;}
+.fade-end {opacity: 1;} */
+.down {opacity: 0; transform: translateY(-100px);}
+.down-end {opacity: 1; transform: translateY(0); transition: ease 0.5s;}
+.left {opacity: 0; transform: translateX(-100px);}
+.left-end {opacity: 1; transform: translateX(0); transition: ease 0.5s;}
+
+.header {background: #2954A2;}
+
+.top-logo {
+  width: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.main-content .video-box {position: relative; width: 100%;}
+.main-content .video-box video { width: 100%;}
+.main-content .video-box .text-box{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0; font-weight: 700; text-align: center;}
+.main-content .video-box .text-box h4 {font-size: 5rem; color: #fff;}
+.main-content .video-box .text-box h5 {color: #fff; font-size: 1.5rem;}
