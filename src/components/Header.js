@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <div className='header'>
-      <img src="https://marcoys.github.io/frea/img/logo.png" alt="로고" className='top-logo' style={{ cursor: 'pointer' }} onClick={() => { navigate('/')}}/>
+      <img src="https://marcoys.github.io/frea/img/logo_w.png" alt="로고" className='top-logo' style={{ cursor: 'pointer' }} onClick={() => { navigate('/')}}/>
 
       <ul className='top-menu'>
         <li onClick={() => { navigate('/company')}}><p>회사소개</p></li>
