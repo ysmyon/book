@@ -1,21 +1,48 @@
+html {font-size: 16px;}
 body {background-color: fff;}
 
 .txt-org {color: orangered;}
-/* .fade {opacity: 0;}
-.fade-end {opacity: 1;} */
+.txt-navy {color: #244990;}
+
 .down {opacity: 0; transform: translateY(-100px);}
 .down-end {opacity: 1; transform: translateY(0); transition: ease 0.5s;}
 .left {opacity: 0; transform: translateX(-100px);}
 .left-end {opacity: 1; transform: translateX(0); transition: ease 0.5s;}
 
-.header {background: #2954A2;}
-
+/* 헤더 */
+.header {background: #2954A2; position: relative; width: 100%; height: 86px;}
 .top-logo {
   width: 200px;
 }
+.top-menu::after { display: block; clear: both; content: "";}
+.top-menu {display: inline-block; width: 300px; position: absolute; right: 0; top: 35px; margin-right: 3%;}
+.top-menu li {float: left; margin: 0 5%;}
+.top-menu li p {cursor: pointer; color: #fff; font-size: 1.2rem;}
 
+/* 메인 */
 .main-content .video-box {position: relative; width: 100%;}
 .main-content .video-box video { width: 100%;}
 .main-content .video-box .text-box{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0; font-weight: 700; text-align: center;}
-.main-content .video-box .text-box h4 {font-size: 5rem; color: #fff;}
+.main-content .video-box .text-box h4 {font-size: 5rem; color: #fff; white-space: nowrap;}
 .main-content .video-box .text-box h5 {color: #fff; font-size: 1.5rem;}
+.main-box1 {text-align: center; padding: 50px 0;}
+.main-box1 h3 {font-size: 3rem; font-weight: 600; margin-bottom: 20px;}
+.main-box1 p {font-size: 1.4rem; line-height: 1.8rem; word-break: keep-all;}
+
+/* 푸터 */
+footer { background-color: rgb(47, 47, 47); padding: 20px 5%; text-align: center;}
+footer img {width: 200px;}
+footer p {color: #fff; font-size: 1.15rem; margin: 5px 0;}
+
+
+@media only screen and (max-width: 640px) {
+  html {font-size: 14px;}
+
+  .main-box1 p {padding: 0 3%;}
+  .top-logo {display: block; margin: 0 auto;}
+  .top-menu {display: none;}
+}
+
+@media only screen and (max-width: 450px) {
+  html {font-size: 12px;}
+}
