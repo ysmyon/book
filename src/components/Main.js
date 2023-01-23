@@ -19,29 +19,33 @@ function Main() {
         
       </div>
 
-      <div className='main-box1' data-aos="fade-up">
+      <div className='main-box1' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         <h3><span className='txt-navy'>S</span>mart <span className='txt-navy'>F</span>actory <span className='txt-navy'>S</span>olution</h3>
 
         <p>프레아 에프에이는 제조산업의 생산성과 품질을 혁신하는 솔루션을 생산, 기술, 품질, 영업 업무 전반을 포괄하는 솔루션을 공급하고 있습니다.<br /> 고객사 니즈와 상황에 맞추어 최적의 솔루션 공급으로 고객사의 발전에 기여하고 있습니다.</p>
       </div>
 
       <div className='main-box2'>
+        <h1>제품 정보</h1>
         <div className='prd-box'>
-          <div>
+          <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
             <img src="https://marcoys.github.io/frea/img/imgTMS.jpg" alt="TMS" />
-            <h5>TMS</h5>
+            <h5 className='txt-navy'>TMS</h5>
             <p>Thickness Measurement System</p>
             <p>두꼐 측정 시스템</p>
           </div>
-          <div>
-            <img src="https://marcoys.github.io/frea/img/ds.png" alt="PTS" />
-            <h5>PTS</h5>
+          <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" data-aos-delay="500">
+            <img src="https://marcoys.github.io/frea/img/imgPTS.png" alt="PTS" />
+            <h5 className='txt-org'>PTS</h5>
             <p>Product Tracking System</p>
             <p>데이터 관리 시스템</p>
           </div>
-          <div>
+          <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" data-aos-delay="700">
             <img src="https://marcoys.github.io/frea/img/imgFVS.png" alt="FVS" />
-            <h5>FVS</h5>
+            <h5 className='txt-green'>FVS</h5>
             <p>FREA Vision System</p>
             <p>비전 검사기</p>
           </div>
