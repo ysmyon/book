@@ -16,25 +16,25 @@ function App() {
 
   function mobOn() {
     setMobmenu(true);
+    setMenusl('mob-menu-on');
+    setBgblack('bg-black-on');
   }
   function mobOff() {
     setMobmenu(false);
+    setMenusl('');
+    setBgblack('');
   }
 
   useEffect(() => {
-    if( mobmenu == true ) {
-      setMenusl('mob-menu-on');
-      setBgblack('bg-black-on');
-      console.log(mobmenu);
-    } else {
-      setMenusl('');
-      setBgblack('');
-      console.log(mobmenu);
+    if(mobmenu === true) {
+      $('html').click((e) => {
+        if($(e.target).hasClass('bg-black-on')){
+          mobOff();
+          console.log('mob-close')
+        }
+      })
     }
-
-    return () => {
-    }
-  }, [mobmenu])
+  },[mobmenu])
 
   return (
     <div className="App">
@@ -48,8 +48,12 @@ function App() {
           <li><p>제품정보</p></li>
           <li><p>문의하기</p></li>
         </ul>
-
-        <button style={{ position: 'absolute', right: 0, top: 0}} onClick={mobOn}>모바일 메뉴</button>
+        
+        <a className='menu-trigger' href="#"  onClick={mobOn}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
 
         <div className={'mob-menu ' + menusl}>
           <button onClick={mobOff}>버튼</button>
