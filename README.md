@@ -74,3 +74,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 // npm install react-router-dom@6
 // npm install jquery
 // npm install aos --save
+// npm i @fortawesome/fontawesome-svg-core
+// npm i @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-brands-svg-icons
+// npm i @fortawesome/react-fontawesome

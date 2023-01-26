@@ -35,6 +35,11 @@ body {background-color: #fff; height: 100%;}
 .menu-trigger span:nth-of-type(1) { top: 0;}
 .menu-trigger span:nth-of-type(2) { top: 15px;}
 .menu-trigger span:nth-of-type(3) { bottom: 0;}
+#logo-box {border-bottom: 1px solid #cbcbcb; margin-bottom: 20px; position: relative;}
+#logo-box svg {width: 25px; height: 25px; position: absolute; top: 10px; right: 10px; cursor: pointer;}
+.mob-menu > ul > li {margin-bottom: 10px;}
+.mob-menu > ul > li > p {font-size: 1.2rem; cursor: pointer;}
+.mob-menu > ul > li svg {color: #1e60c3; width: 50px; height: 25px; position: relative; top: 3px;}
 
 /* 메인 */
 .main-content .video-box {position: relative; width: 100%;}
@@ -45,14 +50,19 @@ body {background-color: #fff; height: 100%;}
 .main-box1 {text-align: center; padding: 100px 0; box-sizing: border-box;}
 .main-box1 h3 {font-size: 3rem; font-weight: 600; margin-bottom: 60px; letter-spacing: -2px;}
 .main-box1 p {font-size: 1.4rem; line-height: 2rem; word-break: keep-all; letter-spacing: -1px; padding: 0 3%;}
-.main-box2 {padding: 50px 0; background-image: url('https://marcoys.github.io/frea/img/bg_01.jpg');}
+.main-box2 {padding: 50px 0; background-image: url('https://marcoys.github.io/frea/img/bg_01.jpg'); background-position: center; background-size: cover;}
 .main-box2 h1 {text-align: center; font-size: 2.5rem; letter-spacing: -1.5px; font-weight: 600; margin-bottom: 50px;}
 .prd-box {display: flex; width: 100%; max-width: 1280px; padding: 0 3%; box-sizing: border-box; margin: 0 auto;}
-.prd-box>div {width: calc(95%/3); margin-right: calc(5%/2); text-align: center;}
+.prd-box>div {width: calc(95%/3); margin-right: calc(5%/2); text-align: center; padding-bottom: 25px; border-radius: 8px; background: #fff;}
 .prd-box>div:last-child {margin-right: 0;}
 .prd-box>div img {width: 100%; }
-.prd-box>div h5 {font-size: 1.6rem; margin: 10px 0;}
+.prd-box>div h5 {font-size: 1.6rem; margin: 20px 0;}
 .prd-box>div p {font-size: 1.2rem; margin: 5px 0;}
+.main-box3 {padding: 50px 0; }
+.main-box3 h1 {text-align: center; font-size: 2.5rem; letter-spacing: -1.5px; font-weight: 600; margin-bottom: 50px;}
+.main-box3 .prd-box {justify-content: center;}
+.main-box3 .prd-box>div {width: calc(50%/3);  padding-bottom: 0;  margin-right: calc(10%/2);}
+.main-box3 .prd-box>div:last-child {margin-right: 0;}
 
 
 

@@ -51,6 +51,24 @@ function Main() {
           </div>
         </div>
       </div>
+
+      <div className='main-box3'>
+        <h1>고객사</h1>
+        <div className='prd-box'>
+          <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
+            <img src="https://marcoys.github.io/frea/img/crown.png" alt="TMS" />
+          </div>
+          <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" data-aos-delay="500">
+            <img src="https://marcoys.github.io/frea/img/lnc.png" alt="PTS" />
+          </div>
+          <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" data-aos-delay="700">
+            <img src="https://marcoys.github.io/frea/img/ds.png" alt="FVS" />
+          </div>
+        </div>
+      </div>
       
     </div>
   )
