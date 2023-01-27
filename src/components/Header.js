@@ -83,8 +83,12 @@ function Header() {
             </li>
             <li>
               <p><FontAwesomeIcon icon={faWindowRestore} size='lg' />제품정보</p>
+            </li>
+            <li className="mob-menu-2dp">
               <ul>
-                <li></li>
+                <li>TMS</li>
+                <li>PTS</li>
+                <li>FVS</li>
               </ul>
             </li>
             <li>

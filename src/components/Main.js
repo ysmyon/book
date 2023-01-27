@@ -56,15 +56,15 @@ function Main() {
         <h1>고객사</h1>
         <div className='prd-box'>
           <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
+     data-aos-anchor-placement="bottom-bottom" data-aos-delay="900">
             <img src="https://marcoys.github.io/frea/img/crown.png" alt="TMS" />
           </div>
           <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" data-aos-delay="500">
+     data-aos-anchor-placement="bottom-bottom" data-aos-delay="1100">
             <img src="https://marcoys.github.io/frea/img/lnc.png" alt="PTS" />
           </div>
           <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" data-aos-delay="700">
+     data-aos-anchor-placement="bottom-bottom" data-aos-delay="1300">
             <img src="https://marcoys.github.io/frea/img/ds.png" alt="FVS" />
           </div>
         </div>
