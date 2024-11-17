@@ -1,0 +1,96 @@
+<!--pager  -->
+
+	<div class="main_pager">
+    <ul>
+      <li data-num="0"><a href="#section1" class="current" data-target="section1"><span>MAIN</span></a></li>
+      <li data-num="1"><a href="#section2" data-target="section2"><span>PREMIUM</span></a></li>
+      <li data-num="2"><a href="#section6" data-target="section3"><span>VISION</span></a></li>
+    </ul>
+  </div>
+
+<script>
+        var pager = $(".main_pager").find("ul>li");
+
+        function enterAct(num) {
+            var tnum = pager.attr("data-num");
+            if(num == 0) {
+                pager.parent().addClass("white");
+            } else {
+                pager.parent().removeClass("white");
+            }
+            pager.find("a").removeClass("current");
+            $("[data-num="+num+"]").find("a").addClass("current");
+        }
+
+        pager.find("a").on("click", function(){
+            let li_index = $(this).parent().index()
+            $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+            // console.log($(this).parent().index())
+            enterAct(li_index)
+        });
+</script>
+
+
+<!--  스크롤트리거 + gsap -->
+           let tl_premium_02 = gsap.timeline({
+               scrollTrigger: {
+                   trigger: '.premium_02_wrap',
+                   start: 'top 60%',
+                   end: 'top',
+                   toggleActions: 'play none none reverse',
+                   markers: false,
+               }
+           })
+           .from('.premium_02_wrap', {x: 100, opacity: 0, duration: 1.2})
+           .from('.premium_02 .premium_02_wrap .tit_box div img', {y: 20, opacity: 0, duration: 1})
+           .from('.premium_02 .premium_02_wrap .tit_box div h1', {y: 20, opacity: 0, duration: 1}, "-=0.7")
+           .from('.premium_02 .premium_02_wrap .tit_box h2', {y: 20, opacity: 0, duration: 1}, "-=0.7")
+           .from('.premium_02 .premium_02_wrap .txt_box div', {opacity: 0, duration: 1}, "-=0.7")
+           .from('.premium_02 .premium_02_wrap .txt_box div p', {x: 20, opacity: 0, duration: 1}, "-=0.7")
+           .from('.premium_02 .premium_02_wrap .txt_box div p strong', {x: 20, opacity: 0, duration: 1}, "-=0.7")
+
+
+// gsap 반응형 구간
+var winW = $(window).width();
+            if(winW > 1024){
+            }
+            else {
+            }
+
+// header 스크롤 액션
+            let headerScroll = function() {
+                const header = document.getElementById('header');
+
+                let tl = gsap.timeline();
+
+                let preScrollTop = 0;
+
+                window.addEventListener('scroll', () => {
+                    let nextScrollTop = window.scrollY;
+                    if(nextScrollTop == 0) {
+                        header.classList.remove('scroll');
+                        header.classList.remove('up');
+                        $('#goTop').removeClass('on');
+                        // console.log(goTop)
+                    } else if(preScrollTop < nextScrollTop) {
+                        header.classList.add('scroll');
+                        header.classList.remove('up');
+                        $('#goTop').addClass('on');
+
+                    } else {
+                        header.classList.remove('scroll');
+                        header.classList.add('up');
+                        tl.to(goTop, {opacity: 1});
+
+                        // console.log('hi')
+                    }
+                    preScrollTop = nextScrollTop
+                })
+            }
+
+            headerScroll();
+
+            window.addEventListener("resize", function (event) {
+                headerScroll();
+            });
+
